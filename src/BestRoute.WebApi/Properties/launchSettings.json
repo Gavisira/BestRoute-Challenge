@@ -1,0 +1,13 @@
+{
+  "profiles": {
+    "BestRoute": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:64009;http://localhost:64010"
+    }
+  }
+}

@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="BestRoute.Database\**" />
+    <Compile Remove="BestRoute.Models\**" />
+    <Compile Remove="BestRoute.Services\**" />
+    <Compile Remove="BestRoute.UnitTests\**" />
+    <Content Remove="BestRoute.Database\**" />
+    <Content Remove="BestRoute.Models\**" />
+    <Content Remove="BestRoute.Services\**" />
+    <Content Remove="BestRoute.UnitTests\**" />
+    <EmbeddedResource Remove="BestRoute.Database\**" />
+    <EmbeddedResource Remove="BestRoute.Models\**" />
+    <EmbeddedResource Remove="BestRoute.Services\**" />
+    <EmbeddedResource Remove="BestRoute.UnitTests\**" />
+    <None Remove="BestRoute.Database\**" />
+    <None Remove="BestRoute.Models\**" />
+    <None Remove="BestRoute.Services\**" />
+    <None Remove="BestRoute.UnitTests\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BestRoute.Database\BestRoute.Database.csproj" />
+    <ProjectReference Include="..\BestRoute.Services\BestRoute.Services.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+
+</Project>
