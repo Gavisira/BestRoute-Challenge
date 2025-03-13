@@ -1,4 +1,4 @@
-﻿# Best Route API
+# Best Route API
 
 API desenvolvida em .NET Core, utilizando boas práticas como Repository Pattern, Dependency Injection e Entity Framework Core para gerenciar rotas de viagens e calcular o trajeto mais barato entre dois pontos.
 
@@ -11,6 +11,7 @@ API desenvolvida em .NET Core, utilizando boas práticas como Repository Pattern
 - **SQLite ou SQL Server** (configurável)
 - **Swagger** (documentação interativa da API)
 - **Testes Unitários (XUnit e Moq)**
+- **Estrutura de Grafos** (para o cálculo eficiente da melhor rota)
 - 
 ## 📌 Configuração do Banco de Dados
 
@@ -73,6 +74,12 @@ dotnet ef database update
 - **Controllers:** CRUD de rotas e endpoint para consulta da melhor rota.
 - **Testes Unitários (XUnit/Moq):** Garantem a confiabilidade dos serviços e lógica do sistema.
 - **Swagger:** Documentação interativa dos endpoints da API.
+
+---
+
+## 📌 Estrutura de Grafos
+
+A aplicação utiliza a estrutura de grafos para representar os pontos de origem e destino das rotas, facilitando o cálculo eficiente da rota mais barata por meio do algoritmo de Dijkstra, que identifica o caminho com menor custo entre dois nós (pontos).
 
 ---
 
