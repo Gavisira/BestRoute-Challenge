@@ -21,6 +21,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BestRoute.Models", "..\Best
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BestRoute.Database", "..\BestRoute.Database\BestRoute.Database.csproj", "{E65C9355-E4CB-4E46-B96F-DB89FB881FC2}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BestRoute.UnitTests", "..\BestRoute.UnitTests\BestRoute.UnitTests.csproj", "{0A7617E1-C638-41B1-B2A9-3027490465BE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +47,10 @@ Global
 		{E65C9355-E4CB-4E46-B96F-DB89FB881FC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E65C9355-E4CB-4E46-B96F-DB89FB881FC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E65C9355-E4CB-4E46-B96F-DB89FB881FC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A7617E1-C638-41B1-B2A9-3027490465BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A7617E1-C638-41B1-B2A9-3027490465BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A7617E1-C638-41B1-B2A9-3027490465BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A7617E1-C638-41B1-B2A9-3027490465BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -53,6 +61,7 @@ Global
 		{D5ED7E79-9536-48B2-A32C-32987A99E3F2} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{B19C0A73-537B-44C7-8BFC-9D2ACC4F98FB} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{E65C9355-E4CB-4E46-B96F-DB89FB881FC2} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{0A7617E1-C638-41B1-B2A9-3027490465BE} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BB1CEBC6-E427-49D9-825A-79F8B09A619C}
