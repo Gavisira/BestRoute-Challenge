@@ -4,6 +4,7 @@ using BestRoute.Database.Context;
 using BestRoute.Database.Contracts;
 using BestRoute.Services;
 using BestRoute.Services.Contracts;
+using Microsoft.EntityFrameworkCore;
 
 namespace BestRoute
 {
@@ -19,8 +20,11 @@ namespace BestRoute
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+
+
+            //Adicionando diretamente no program.cs, mas costumeiramente é feito em um arquivo de configuração
             builder.Services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
+                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
             builder.Services.AddScoped<IRouteRepository, RouteRepository>();
             builder.Services.AddScoped<IRouteService, RouteService>();
             var app = builder.Build();
