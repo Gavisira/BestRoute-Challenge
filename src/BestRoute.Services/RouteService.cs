@@ -8,7 +8,7 @@ public class RouteService(IRouteRepository routeRepository) : IRouteService
     public async Task<(List<string> path, decimal cost)> FindCheapestRouteAsync(string origin, string destination)
     {
         var routes = await routeRepository.GetAllAsync();
-
+        //Utilização da estrutura de grafos para encontrar o menor caminho
         var graph = routes
             .GroupBy(r => r.Origin)
             .ToDictionary(g => g.Key, g => g.Select(r => (r.Destination, r.Price)).ToList());
